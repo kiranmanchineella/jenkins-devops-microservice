@@ -1,29 +1,29 @@
-pipeline{
+pipeline {
 	agent any
-	stages{
+	stages { 
 		stage('Build') {
 			steps {
 				echo "Build"
 			}
 		}
-		stage("Test") {
+		stage('Test') {
 			steps{
-			echo 'Test'
+			echo "Test"
 			}
 		}
 		stage('Integration Test')
 		steps{
-			echo 'Integration test'
+			echo "Integration test"
 		}
 	}post{
 	always{
-		echo 'kiran the KING Manchineella'
+		echo "kiran the KING Manchineella"
 	}
 	success {
-		echo 'Success'
+		echo '"Success'"
 	}
 	failure {
-		echo "fail"
+		echo "I run when fail"
 	}
   }  
 }
