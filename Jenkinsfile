@@ -4,22 +4,22 @@ pipeline {
 		    stage('Build'){
 			
 		            steps{
-               echo "Build"
+                           echo "Build"
 	           
 
-		}
-	}
-}
+		  }
+	   }
+   
                stage('Test'){
-		       steps{
-               
-	           echo "Test" 
-		}
+		          steps{
+                           echo "Test" 
+		                }
 			   }      
-             stage('Integration test'){
-		           steps{
+                stage('Integration test'){
+		              steps{
                
-	            echo "Integration Test"
-		}
+	                       echo "Integration Test"
+		                   }
 			 }
+       }
 }
