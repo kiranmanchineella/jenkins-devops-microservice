@@ -1,14 +1,14 @@
 pipeline {
 	agent any
-	stages {
+	    stages {
 		    stage('Build'){
 			
 		            steps{
                            echo "Build"
 	           
 
-		  }
-	   }
+		               }
+	               }
    
                stage('Test'){
 		          steps{
@@ -21,7 +21,7 @@ pipeline {
 	                       echo "Integration Test"
 		                   }
 			 }
-       }  post {
+       }  post{ 
 		   always{
 			   echo 'kiran the KING Manchineella'
 		   }
@@ -31,5 +31,5 @@ pipeline {
 		   failure{
 			   echo 'fail'
 		   }
-	   }
+	}
 }
