@@ -15,7 +15,8 @@ pipeline {
 		steps{
 			echo "Integration test"
 		}
-	}post{
+	}
+	post{
 	always{
 		echo "kiran the KING Manchineella"
 	}
