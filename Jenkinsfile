@@ -1,34 +1,34 @@
 pipeline {
 	agent any
 	    stages {
-		    stage('Build'){
+		    stage('Build') {
 			
-		            steps{
+		            steps {
                            echo "Build"
 	           
 
 		               }
 	               }
    
-               stage('Test'){
+               stage('Test') {
 		          steps{
                            echo "Test" 
 		                }
 			   }      
-                stage('Integration test'){
+                stage('Integration test') {
 		              steps{
                
 	                       echo "Integration Test"
 		                   }
 			 }
-       }  post{ 
-		   always{
+       }  post { 
+		   always {
 			   echo 'kiran the KING Manchineella'
 		   }
-		   success{
+		   success { 
 			   echo 'success'
 		   }
-		   failure{
+		   failure {
 			   echo 'fail'
 		   }
 	}
