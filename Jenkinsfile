@@ -16,6 +16,7 @@ pipeline {
 			echo "Integration test"
 		}
 	}
+	}
 	post{
 	always{
 		echo "kiran the KING Manchineella"
@@ -27,5 +28,4 @@ pipeline {
 		echo "I run when fail"
 	}
   }  
-}
 }
