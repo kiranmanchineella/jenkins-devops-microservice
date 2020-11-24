@@ -21,5 +21,15 @@ pipeline {
 	                       echo "Integration Test"
 		                   }
 			 }
-       }
+       }  post {
+		   always{
+			   echo 'kiran the KING Manchineella'
+		   }
+		   success{
+			   echo 'success'
+		   }
+		   failure{
+			   echo 'fail'
+		   }
+	   }
 }
