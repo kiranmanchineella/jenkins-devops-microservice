@@ -20,7 +20,7 @@ pipeline {
 		echo "kiran the KING Manchineella"
 	}
 	success {
-		echo '"Success"
+		echo "Success"
 	}
 	failure {
 		echo "I run when fail"
